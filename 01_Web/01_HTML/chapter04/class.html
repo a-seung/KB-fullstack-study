@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- 사용자가 입력하는 입력 양식 -->
+      <input type="text" name="text" value="text" /><br />
+      <input type="name" name="name" value="" placeholder="사용자 id를 입력하세요." /><br />
+      <input type="password" name="password" value="password" placeholder="비밀번호를 입력하세요." /><br />
+      <input type="file" name="file" value="file" /><br />
+      <input type="checkbox" name="checkbox" value="checkbox" /><br />
+      <input type="radio" name="radio" value="radio" /><br />
+
+      <!-- 보이지 않는 입력 양식 -->
+      <input type="hidden" name="hidden" value="hidden" /><br />
+
+      <!-- 버튼 -->
+      <input type="button" value="button" /><br />
+      <input type="reset" value="reset" /><br />
+      <input type="submit" value="submit" /><br />
+      <input type="image" src="http://via.placeholder.com/100x100" />
+    </form>
+
+    <hr />
+
+    <form>
+      <table>
+        <tr>
+          <td><label for="username"> 이름 </label></td>
+          <td><input id="username" type="text" name="username" /></td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <input id="man" type="radio" name="gender" value="m" />
+            <label for="man"> 남자 </label>
+            <input id="woman" type="radio" name="gender2" value="w" />
+            <label for="woman"> 여자 </label>
+            <input id="man" type="radio" name="gender" value="m" />
+            <label for="man"> 남자 </label>
+            <input id="woman" type="radio" name="gender2" value="w" />
+            <label for="woman"> 여자 </label>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="가입" />
+    </form>
+
+    <hr />
+
+    <form>
+      <select name="food" multiple>
+        <option value="f1">김밥</option>
+        <option value="f2">떡볶이</option>
+        <option value="f3">순대</option>
+        <option value="f4">어묵</option>
+      </select>
+      <input type="submit" />
+    </form>
+
+    <hr />
+  </body>
+  <body>
+    <h4>잘못된 형태</h4>
+    <textarea rows="5">
+      Textarea 태그
+      Textarea 태그
+    </textarea>
+    <h4>올바른 형태</h4>
+    <textarea>
+Textarea 태그
+Textarea 태그
+    </textarea>
+
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+    <div>div 태그 - block 형식</div>
+
+    <span>span 태그 inline 형식 </span>
+    <span>span 태그 inline 형식 </span>
+    <span>span 태그 inline 형식 </span>
+    <span>span 태그 inline 형식 </span>
+    <span>span 태그 inline 형식 </span>
+  </body>
+</html>

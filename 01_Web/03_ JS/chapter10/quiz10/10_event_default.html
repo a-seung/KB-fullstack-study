@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a id="button" href="http://www.naver.com">버튼</a>
+  </body>
+  <script>
+    const button = document.getElementById('button');
+    button.onclick = function (e) {
+      e.preventDefault();
+      //태그의 기본적인 자바스크립트 기능을 끊겠다는 의미
+      //   return false;
+    };
+  </script>
+</html>

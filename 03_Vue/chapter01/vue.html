@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Vue를 해석할 수 있는 자바스크립트를 가져왔기 때문에 Vue를 해석할 수 있음 
+    div id 선언
+    Vue.createApp({객체 생성})
+    .mount('#id')-->
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <button @click="changeData">데이터 변경</button>
+    </div>
+  </body>
+  <script>
+    let vue = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          message: 'Hello, Vue World!',
+        };
+      },
+
+      methods: {
+        changeData() {
+          this.message = 'data를 바꿔 버렸단 말씀!!';
+        },
+      },
+    }).mount('#app');
+  </script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+
+      .skyblue {
+        background-color: skyblue;
+      }
+
+      .coral {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box coral">Box!!</div>
+    <script>
+      const boxEl = document.querySelector('.box');
+
+      boxEl.addEventListener('click', function () {
+        if (boxEl.classList.contains('coral')) {
+          boxEl.classList.remove('coral');
+          boxEl.classList.add('skyblue');
+        } else {
+          boxEl.classList.remove('skyblue');
+          boxEl.classList.add('coral');
+        }
+      });
+    </script>
+  </body>
+</html>
