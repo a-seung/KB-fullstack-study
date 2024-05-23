@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input :type="firstInputType" />
+      <input :type="secondInputType" />
+      <button v-on:click="changeType">인풋 타입 일괄 변경 버튼</button>
+    </div>
+  </body>
+  <script>
+    const app = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          firstInputType: 'checkbox',
+          secondInputType: 'radio',
+        };
+      },
+      methods: {
+        // changeType function () {} 인데 축약
+        // 중괄호가 함수에 종속된 거면 평소 js 문법 쓰면됨
+        // 객체 문법을 쓸 땐 키:값 써야함
+        changeType() {
+          this.firstInputType = 'radio';
+          this.secondInputType = 'text';
+        },
+      },
+    }).mount('#app');
+  </script>
+</html>

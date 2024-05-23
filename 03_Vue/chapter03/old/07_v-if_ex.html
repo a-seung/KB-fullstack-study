@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>랜덤으로 생선된 숫자를 맞춰 보세요!</h1>
+      <h1 v-if="inputNum===0"></h1>
+      <h1 v-else-if="randNum > inputNum">Up</h1>
+      <h1 v-else-if="inputNum > randNum">Down</h1>
+      <h1 v-else="randNum">정답!</h1>
+      <input type="text" v-model.number="inputNum" />
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          randNum: parseInt(Math.random() * 9) + 1,
+          inputNum: 0,
+        };
+      },
+    }).mount('#app');
+  </script>
+</html>
+<!-- 
+v-show는 태그는 존재하지만 CSS적으로 보여줄지 말지를 정하는 것
+v-if / v-else-if / v-else 는 태그를 아예 없애는 것 -->
