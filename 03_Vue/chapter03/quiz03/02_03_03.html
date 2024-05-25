@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="text" v-bind:value="message" />
+
+      <img v-bind:src="imagePath" alt="닥스훈트" width="200px" />
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          message: 'v-bind 디렉티브',
+          imagePath: 'https://i.namu.wiki/i/ThxW_nrt2bcTGt4DlOncR_zbrdEYE0k21V2GN4u47Tis1yohdSRB50vHrRMUl_wYBHyEMT5ITrQI50IXSl0c0w.webp',
+        };
+      },
+    }).mount('#app');
+  </script>
+</html>

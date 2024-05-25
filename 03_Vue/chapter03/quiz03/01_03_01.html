@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h2>{{ message }}</h2>
+    </div>
+  </body>
+  <script>
+    const model = { message: 'Hello Vue3!' };
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return model;
+      },
+    }).mount('#app');
+
+    // 개발자도구 콘솔에서 vueApp.message ="바꾸기" 하면 메시지 부분 바뀜
+  </script>
+</html>

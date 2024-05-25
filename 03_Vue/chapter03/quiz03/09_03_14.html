@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      #list {
+        width: 600px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      #list td,
+      #list th {
+        border: 1px solid black;
+        vertical-align: middle;
+        padding: 2px;
+      }
+
+      #list > thead > tr {
+        background-color: purple;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <table id="list">
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>전화번호</th>
+          </tr>
+        </thead>
+        <tbody id="contacts">
+          <tr v-for="(con,index) in contacts" :key="con.no">
+            <td>{{ index+1 }}</td>
+            <td>{{con.name}}</td>
+            <td>{{con.tel}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          contacts: [
+            { no: 1001, name: 'RM', tel: '010-3456-8299' },
+            { no: 1012, name: '정국', tel: '010-3456-8298' },
+            { no: 1013, name: '제이홉', tel: '010-3456-8297' },
+            { no: 1014, name: '슈가', tel: '010-3456-8296' },
+          ],
+        };
+      },
+    }).mount('#app');
+  </script>
+</html>
