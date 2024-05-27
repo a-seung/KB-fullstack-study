@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- vue를 해석할 수 있는 js코드 -->
+  </head>
+  <body>
+    <div id="app" style="background-color: lightblue">
+      <h1>count : {{ count }}</h1>
+      <div style="background-color: orange" @click="iDontWantToDiscount">
+        <h1>안쪽</h1>
+        <button @click="discount.stop">클릭!</button>
+        <!-- 버블링 막기위해 -->
+      </div>
+      <h1>바깥쪽</h1>
+      <button @click="discount">클릭!</button>
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: '오후 수업',
+      data() {
+        return {
+          count: 10,
+        };
+      },
+      methods: {
+        discount() {
+          this.count--;
+        },
+        iDontWantToDiscount() {
+          this.count--;
+        },
+      },
+    }).mount('#app');
+  </script>
+</html>

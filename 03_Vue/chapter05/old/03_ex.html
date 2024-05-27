@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- vue를 해석할 수 있는 js코드 -->
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <input type="text" v-model="inputNum" />
+      <button @click="compare">확인</button>
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: 'App',
+      data() {
+        return {
+          randNum: parseInt(Math.random() * 20),
+          inputNum: 0,
+          message: '랜덤으로 생성된 숫자를 맞혀보세요',
+        };
+      },
+      methods: {
+        compare() {
+          if ((this.randNum = this.inputNum)) {
+            this.message = '정답입니다.';
+          } else if (this.randNum > this.inputNum) {
+            this.message = 'Down';
+          } else if (this.inputNum > this.randNum) {
+            this.message = 'Up';
+          }
+        },
+      },
+    }).mount('#app');
+  </script>
+</html>

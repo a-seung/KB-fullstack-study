@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- vue를 해석할 수 있는 js코드 -->
+  </head>
+  <body>
+    <div id="app">
+      <h1 :style="{ backgroundStyle, fontStyle }">여러 스타일 적용하기 by 객체</h1>
+      <h1 :style="[ backgroundStyle, fontStyle ]">여러 스타일 적용하기 by 배열</h1>
+      <!-- 객체 안에 설정된 걸 적용하고 싶을땐 배열에 넣어줘야함 -->
+    </div>
+  </body>
+  <script>
+    const vueApp = Vue.createApp({
+      name: '오후 수업',
+      data() {
+        return {
+          backgroundStyle: { backgroundColor: 'lightblue' },
+          fontStyle: { color: 'orange' },
+        };
+      },
+    }).mount('#app');
+  </script>
+</html>
