@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66010c96-f997-4376-a057-b9f75aa1a7f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch01/sec09/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch01/sec11/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch01/sec12/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch02/sec01/VariableExchangeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch02/sec01/VariableInitializationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_Java/study/src/ch02/sec01/VariableUseExample.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2i2V7oeS5IZsc7VFmurNdt3eRJ6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/KB_fullstack/05_Java",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66010c96-f997-4376-a057-b9f75aa1a7f4" name="Changes" comment="" />
+      <created>1718688494098</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718688494098</updated>
+      <workItem from="1718688495115" duration="97000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
