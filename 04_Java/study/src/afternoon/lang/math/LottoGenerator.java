@@ -12,7 +12,6 @@ public class LottoGenerator {
         }
     }
 
-
     public void printLottoNumbers() {
         System.out.print("로또번호 : ");
         for (int i = 0; i < lottoNumbers.length; i++) {
