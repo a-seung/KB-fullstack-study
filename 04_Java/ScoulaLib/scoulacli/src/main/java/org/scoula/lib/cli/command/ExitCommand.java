@@ -1,6 +1,6 @@
 package org.scoula.lib.cli.command;
 
-public class ExitCommand {
+public class ExitCommand implements Command {
 
     @Override
     public void execute() {

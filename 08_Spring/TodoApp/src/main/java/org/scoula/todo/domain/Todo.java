@@ -6,7 +6,8 @@ import java.util.Date;
 
 public class Todo implements Cloneable {
     // 복제(clone)을 허용하는 인터페이스
-    private static int gid = 1; // Todo Id 발급을 위한 스태틱 변수
+    private static int gid = 1; // Todo Id 발급을 위한 스태틱변수
+
     private int id;
     private String title;
     private String description;

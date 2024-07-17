@@ -1,0 +1,3 @@
+rootProject.name = 'sv8'
+include ':ScoulaCli'
+project(':ScoulaCli').projectDir=new File('C:\\KB_fullstack\\04_Java\\sv8\\scoulacli')

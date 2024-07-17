@@ -1,8 +1,10 @@
 package org.scoula.lib.cli;
 
+
 public abstract class App {
     public void run() {
         init();
+
         while (true) {
             try {
                 menu.printMenu();
