@@ -12,8 +12,6 @@ class Demo {
         // create a list of integers
         List<Integer> number = Arrays.asList(2, 3, 4, 5);
 
-
-
         // demonstration of map method
         List<Integer> square
                 = number.stream()

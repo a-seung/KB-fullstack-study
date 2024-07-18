@@ -4,34 +4,37 @@ import org.scoula.lib.cli.domain.StudentScores;
 import org.scoula.lib.cli.ui.Input;
 
 public class StudentScoreService {
-//    StudentScores studentScores = StudentScores.getInstance();
+    //    StudentScores studentScores = StudentScores.getInstance();
     public void initScores() {
         StudentScores studentScores = StudentScores.getInstance();
         int studentNum = Input.getInt("학생수> ");
         studentScores.setStudentNum(studentNum);
     }
+
     public void getScores() {
         StudentScores studentScores = StudentScores.getInstance();
-        int [] scores = studentScores.getScores();
-        for(int i = 0; i< scores.length; i++) {
+        int[] scores = studentScores.getScores();
+        for (int i = 0; i < scores.length; i++) {
             scores[i] = Input.getInt("scores[" + i + "]> ");
         }
     }
+
     public void printScores() {
         StudentScores studentScores = StudentScores.getInstance();
-        int [] scores = studentScores.getScores();
-        for(int i=0; i<scores.length; i++) {
+        int[] scores = studentScores.getScores();
+        for (int i = 0; i < scores.length; i++) {
             System.out.println("scores[" + i + "]: " + scores[i]);
         }
     }
+
     public void analize() {
         StudentScores studentScores = StudentScores.getInstance();
-        int [] scores = studentScores.getScores();
+        int[] scores = studentScores.getScores();
         int max = 0;
         int sum = 0;
         double avg = 0;
-        for(int i=0; i<scores.length; i++) {
-            max = (max<scores[i])? scores[i] : max;
+        for (int i = 0; i < scores.length; i++) {
+            max = (max < scores[i]) ? scores[i] : max;
             sum += scores[i];
         }
         avg = (double) sum / studentScores.getStudentNum();

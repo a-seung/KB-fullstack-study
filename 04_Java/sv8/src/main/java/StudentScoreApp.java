@@ -6,6 +6,7 @@ import org.scoula.lib.cli.ui.MenuItem;
 
 public class StudentScoreApp extends App {
     StudentScoreService service = new StudentScoreService();
+
     @Override
     public void createMenu(Menu menu) {
         menu.add(new MenuItem("학생수", service::initScores));
@@ -14,6 +15,7 @@ public class StudentScoreApp extends App {
         menu.add(new MenuItem("분석", service::analize));
         menu.add(new MenuItem("종료", service::exit));
     }
+
     public static void main(String[] args) {
         App app = new StudentScoreApp();
         app.run();

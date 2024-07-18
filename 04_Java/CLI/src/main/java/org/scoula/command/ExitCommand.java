@@ -1,4 +1,4 @@
-package org.scoula.lib.cli.command;
+package org.scoula.command;
 
 public class ExitCommand implements Command {
     @Override
@@ -7,4 +7,3 @@ public class ExitCommand implements Command {
         System.exit(0);
     }
 }
-
