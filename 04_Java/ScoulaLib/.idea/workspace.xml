@@ -4,111 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../CLI/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/MyApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/AnalizeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/GetScoresCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/InitScoresCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/command/PrintScoreCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/domain/StudentScores.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/ui/Input.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/ui/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/ui/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../study/lib/lombok-1.18.32.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/TodoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/TodoDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/TodoProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/TodoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/todo.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/scoulacli_main_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/scoulacli.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scoulacli.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/scoulacli.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scoulacli.test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ScoulaLib.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/MyApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/AnalizeCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/ExitCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/GetScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/InitScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/command/PrintScoreCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/domain/StudentScores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/scoulacli/src/main/java/org/scoula/lib/cli/ui/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/AnalizeCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/ExitCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/GetScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/InitScoresCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/command/PrintScoreCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/domain/StudentScores.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/scoula/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/scoula/Input.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/scoula/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/scoula/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/scoula/MyApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/ui/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoulaLib2/src/main/java/org/ui/MenuItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/04_Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../study/04_Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../study/lib/lombok.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sv8/scoulacli/src/main/java/org/scoula/lib/cli/service/StudentScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sv8/scoulacli/src/main/java/org/scoula/lib/cli/service/StudentScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sv8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sv8/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sv8/src/main/java/StudentScoreApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sv8/src/main/java/StudentScoreApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sv8/src/main/java/org/scoula/todo/TodoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../sv8/src/main/java/org/scoula/todo/TodoApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../08_Spring/MemoApp/src/main/java/org/scoula/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,6 +88,7 @@
       <workItem from="1721288875351" duration="10000" />
       <workItem from="1721288899808" duration="26000" />
       <workItem from="1721288940287" duration="174000" />
+      <workItem from="1721295834489" duration="57000" />
     </task>
     <servers />
   </component>
