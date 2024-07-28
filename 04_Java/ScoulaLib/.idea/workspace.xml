@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../../.idea/KB-fullstack-study.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter07/vue-test(서울사람들).zip" beforeDir="false" />
@@ -36,6 +37,9 @@
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDaoImpl.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="" />
+>>>>>>> d81fe0549a826f8893c1c18b14e282e6d44701f8
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,9 +119,13 @@
       <workItem from="1721288875351" duration="10000" />
       <workItem from="1721288899808" duration="26000" />
       <workItem from="1721288940287" duration="174000" />
+<<<<<<< HEAD
       <workItem from="1721636253408" duration="358000" />
       <workItem from="1721640057928" duration="36000" />
       <workItem from="1721661136652" duration="118000" />
+=======
+      <workItem from="1721295834489" duration="57000" />
+>>>>>>> d81fe0549a826f8893c1c18b14e282e6d44701f8
     </task>
     <servers />
   </component>
