@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/KB-fullstack-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter07/vue-test(서울사람들).zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/db.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/pages/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/pages/Login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/pages/Todo.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/pages/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/src/router/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../03_Vue/chapter11/axios-vue/axios-vue/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CLI/src/main/java/org/scoula/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/scoulacli.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/scoulacli.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../05_MySQL/jdbc_ex/src/main/java/org/scoula/todo/UserDaoImpl.java" afterDir="false" />
+    </list>
+=======
     <list default="true" id="f25a352b-a944-4116-896e-f6b4c8a32901" name="Changes" comment="" />
+>>>>>>> d81fe0549a826f8893c1c18b14e282e6d44701f8
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,12 +55,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="scoulacli" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -63,6 +93,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -88,7 +119,13 @@
       <workItem from="1721288875351" duration="10000" />
       <workItem from="1721288899808" duration="26000" />
       <workItem from="1721288940287" duration="174000" />
+<<<<<<< HEAD
+      <workItem from="1721636253408" duration="358000" />
+      <workItem from="1721640057928" duration="36000" />
+      <workItem from="1721661136652" duration="118000" />
+=======
       <workItem from="1721295834489" duration="57000" />
+>>>>>>> d81fe0549a826f8893c1c18b14e282e6d44701f8
     </task>
     <servers />
   </component>

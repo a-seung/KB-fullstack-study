@@ -28,7 +28,6 @@ public class UserDaoImpl implements UserDao {
                     Timestamp loginCreatedAt = rs.getTimestamp("created_at");
 
                     loginUser = new UserVo(loginUserId, loginName, loginPassword, loginCreatedAt);
-
                 }
             }
         }catch (SQLException e) {

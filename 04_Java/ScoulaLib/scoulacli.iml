@@ -5,8 +5,9 @@
     <content url="file://$MODULE_DIR$/scoulacli">
       <excludeFolder url="file://$MODULE_DIR$/scoulacli/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/scoulacli/build" />
+      <excludeFolder url="file://$MODULE_DIR$/scoulacli/out" />
     </content>
-    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
