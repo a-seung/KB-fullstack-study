@@ -1,4 +1,4 @@
-package org;
+package org.scoula;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

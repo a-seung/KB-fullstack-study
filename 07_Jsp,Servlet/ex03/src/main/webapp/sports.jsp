@@ -18,11 +18,11 @@
         <ul>
             <li>
                 <label for="baseball">야구</label>
-                <input type="checkbox" id="baseball" name="spots" value="야구">
+                <input type="checkbox" id="baseball" name="sports" value="야구">
                 <label for="football">축구</label>
-                <input type="checkbox" id="football" name="spots" value="축구">
+                <input type="checkbox" id="football" name="sports" value="축구">
                 <label for="basketball">농구</label>
-                <input type="checkbox" id="basketball" name="spots" value="농구">
+                <input type="checkbox" id="basketball" name="sports" value="농구">
             </li>
             <li>
                 <label for="male">남</label>
