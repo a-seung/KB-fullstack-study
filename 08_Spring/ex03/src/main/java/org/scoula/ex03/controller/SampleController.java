@@ -2,12 +2,19 @@ package org.scoula.ex03.controller;
 
 import lombok.extern.log4j.Log4j;
 import org.scoula.ex03.dto.SampleDTO;
+import org.scoula.ex03.dto.SampleDTOLIst;
 import org.scoula.ex03.dto.TodoDTO;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 @Controller
 @RequestMapping("/sample")
@@ -44,17 +51,23 @@ public class SampleController {
         return "ex02";
     }
 
-    @GetMapping("/ex02List")
-    public String ex02List(@RequestParam("ids") ArrayList<String> ids) {
-        log.info("ids : " + ids);
-        return "ex02List";
-    }
-
 //    @GetMapping("/ex02List")
-//    public String ex02List(@RequestParam("ids") String[] ids) {
+//    public String ex02List(@RequestParam("ids") ArrayList<String> ids) {
 //        log.info("ids : " + ids);
 //        return "ex02List";
 //    }
+
+    @GetMapping("/ex02List")
+    public String ex02List(@RequestParam("ids") String[] ids) {
+        log.info("array ids : " + Arrays.toString(ids));
+        return "ex02List";
+    }
+
+    @GetMapping("/ex02Bean")
+    public String ex02Bean(SampleDTOLIst list) {
+        log.info("list dtos: " + list);
+        return "ex02Bean";
+    }
 
     @GetMapping("/ex03")
     public String ex03(TodoDTO todo) {
@@ -69,6 +82,11 @@ public class SampleController {
         return "sample/ex04";
     }
 
+    @GetMapping("/ex05")
+    public void ex05() {
+        log.info("/ex05...............");
+    }
+
     @GetMapping("/ex06")
     public String ex06(RedirectAttributes ra) {
         log.info("/ex06...............");
@@ -76,5 +94,43 @@ public class SampleController {
         ra.addAttribute("age","10");
         return "redirect:/sample/ex06-2";
     }
+
+    @GetMapping("/ex07")
+    public @ResponseBody SampleDTO ex07() {
+        log.info("ex07...............");
+
+        SampleDTO dto = new SampleDTO();
+        dto.setAge(10);
+        dto.setName("홍길동");
+        return dto;
+    }
+
+    @GetMapping("/ex08")
+    public ResponseEntity<String> ex08() {
+        log.info("/ex08..........");
+
+        // {"name": "홍길동"}
+        String msg = "{\"name\": \"홍길동\"}";
+
+        HttpHeaders header = new HttpHeaders();
+        header.add("Content-Type", "application/json;charset=UTF-8");
+
+        return new ResponseEntity<>(msg, header, HttpStatus.OK);
+    }
+
+    @GetMapping("/exUpload")
+    public void exUpload() { // return 타입이 void면 뷰 이름이 경로이름이 됨
+        log.info("/exUpload..........");
+    }
+
+    @PostMapping("/exUploadPost")
+    public void exUploadPost(ArrayList<MultipartFile> files) {
+        for(MultipartFile file : files) {
+            log.info("----------------------------------");
+            log.info("name:" + file.getOriginalFilename());
+            log.info("size:" + file.getSize());
+        }
+    }
+
 
 }
