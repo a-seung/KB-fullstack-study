@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @PropertySource({"classpath:/application.properties"})
-@MapperScan(basePackages = {"org.scoula.mapper"})
+@MapperScan(basePackages = {"org.scoula.board.mapper"})
 public class RootConfig {
     // 웹과 무관한 설정(데이터베이스,보안 설정)
     // 데이터 베이스 연동하기 전까진 루트컨피그에 내용 없음
