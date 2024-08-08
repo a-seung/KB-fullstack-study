@@ -12,7 +12,10 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @EnableWebMvc
-@ComponentScan(basePackages = {"org.scoula.controller"}) // Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
+@ComponentScan(basePackages = {// Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
+        "org.scoula.exception",
+        "org.scoula.controller",
+        "org.scoula.board.controller"})
 public class ServletConfig implements WebMvcConfigurer {
     // DispatcherServlet 을 설정하는 클래스
 

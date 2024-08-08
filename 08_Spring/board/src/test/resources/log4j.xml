@@ -32,9 +32,18 @@
     </logger>
 
     <!-- 운영할때의 설정 -->
-    <logger name="jdbc">
+    <logger name="jdbc.audit">
         <level value="warn" />
     </logger>
+
+    <logger name="jdbc.resultset">
+        <level value="warn" />
+    </logger>
+
+    <logger name="jdbc.connection">
+        <level value="warn" />
+    </logger>
+
     <logger name="jdbc.sqlonly">
         <level value="info" />
     </logger>
