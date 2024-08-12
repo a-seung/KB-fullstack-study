@@ -21,6 +21,15 @@
                 and content LIKE CONCAT('%', #{content}, '%')
             </if>
         </where>
-
     </select>
+
+    <delete id="delete">
+        delete from posts
+        where id=#{id}
+    </delete>
+
+    <insert id="save">
+        INSERT INTO posts (title, content)
+        VALUES (#{title}, #{content})
+    </insert>
 </mapper>

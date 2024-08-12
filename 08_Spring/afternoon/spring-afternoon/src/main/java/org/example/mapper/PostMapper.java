@@ -15,6 +15,12 @@ public interface PostMapper {
             @Param("content") String content
     );
 
+    int delete(@Param("id") Long id);
+
+   int save(
+            @Param("title") String title,
+            @Param("content") String content
+    );
 
 
 }

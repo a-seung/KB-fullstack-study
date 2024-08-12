@@ -18,4 +18,12 @@ public class PostRepository {
     public List<PostDto> findByCondition(String title, String content) {
         return postMapper.findByCondition(title, content);
     }
+
+    public int delete(Long id) {
+        return postMapper.delete(id);
+    }
+
+    public int save(String title, String content) {
+        return postMapper.save(title, content);
+    }
 }
