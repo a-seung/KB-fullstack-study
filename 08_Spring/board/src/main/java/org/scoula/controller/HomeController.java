@@ -10,7 +10,9 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        log.info("================> HomeController /");
-        return "index"; // View의 이름 > 실제경로 : WEB-INF/views/index.jsp
+//        log.info("================> HomeController /");
+//        return "index"; // View의 이름 > 실제경로 : WEB-INF/views/index.jsp
+
+        return "redirect:/board/list";
     }
 }
