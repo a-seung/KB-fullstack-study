@@ -2,7 +2,6 @@ package org.example.controller.post;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Param;
 import org.example.dto.post.PostDto;
 import org.example.dto.post.PostRepository;
 import org.springframework.stereotype.Controller;
