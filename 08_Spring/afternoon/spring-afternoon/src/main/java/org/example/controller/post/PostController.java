@@ -1,5 +1,6 @@
 package org.example.controller.post;
 
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.dto.post.PostDto;
@@ -79,6 +80,13 @@ public class PostController {
         if (affectedRows > 0) log.info("게시글 추가 성공");
 
         return "redirect:/post/v1/show";
+    }
+
+    //에러 강제 발생
+    @GetMapping("/error")
+    public String error(HttpServletRequest request) {
+        log.info("===============> 강제 에러발생" + request.getRequestURI());
+        throw new RuntimeException("의도적으로 발생시킨 예외");
     }
 
 }
