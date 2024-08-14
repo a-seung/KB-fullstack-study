@@ -52,8 +52,10 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public void create(BoardDTO board) {
         log.info("create......" + board);
+
         BoardVO v= board.toVo();
         mapper.create(v);
+
         // 파일 업로드 처리
         List<MultipartFile> files = board.getFiles();
         if(files != null && !files.isEmpty()) { // 첨부 파일이 있는 경우
@@ -73,9 +75,6 @@ public class BoardServiceImpl implements BoardService {
         log.info("delete...." + no);
         return mapper.delete(no) == 1;
     }
-
-
-
 
     private void upload(Long bno, List<MultipartFile> files) {
         for(MultipartFile part: files) {

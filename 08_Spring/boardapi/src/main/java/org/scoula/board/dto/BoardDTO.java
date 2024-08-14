@@ -34,7 +34,10 @@ public class BoardDTO {
                 .no(vo.getNo())
                 .title(vo.getTitle())
                 .content(vo.getContent())
-                .writer(vo.getWriter()).regDate(vo.getRegDate()).updateDate(vo.getUpdateDate())
+                .writer(vo.getWriter())
+                .attaches(vo.getAttaches())
+                .regDate(vo.getRegDate())
+                .updateDate(vo.getUpdateDate())
                 .build();
     }
 
@@ -44,7 +47,9 @@ public class BoardDTO {
                 .no(no)
                 .title(title)
                 .content(content)
-                .writer(writer).regDate(regDate)
+                .writer(writer)
+                .attaches(attaches)
+                .regDate(regDate)
                 .updateDate(updateDate)
                 .build();
     }

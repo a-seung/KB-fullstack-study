@@ -37,3 +37,5 @@ CREATE TABLE tbl_board_attachment
     reg_date     DATETIME DEFAULT now(),
     CONSTRAINT FOREIGN KEY (bno) REFERENCES tbl_board (no)
 );
+
+SELECT * FROM tbl_board_attachment;

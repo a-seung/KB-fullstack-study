@@ -42,5 +42,6 @@ public class BoardController {
         service.delete(no);
         return ResponseEntity.ok().build();
     }
+
 }
 

@@ -25,6 +25,7 @@ public class BoardAttachmentVO {
     private Date regDate; // 등록일
 
 
+    // 팩토리 메서드
     public static BoardAttachmentVO of(MultipartFile part, Long bno, String path) { // path: 업로드된 파일 경로
         return builder()
                 .bno(bno)
