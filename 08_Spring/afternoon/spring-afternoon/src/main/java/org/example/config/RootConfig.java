@@ -18,7 +18,7 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-@ComponentScan(basePackages = "org.example")
+@ComponentScan(basePackages = "org.example") // 컴포넌트들을 어디서 찾을지 정해줌
 @MapperScan(basePackages = {"org.example.mapper"})
 @PropertySource("classpath:application.properties")
 public class RootConfig {

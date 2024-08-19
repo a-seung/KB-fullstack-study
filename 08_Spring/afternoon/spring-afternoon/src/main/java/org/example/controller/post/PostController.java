@@ -21,7 +21,7 @@ import java.util.List;
 @RequestMapping("/post/v1")
 public class PostController {
     private final PostRepository postRepository;
-    private String context = "/post";
+    private String context = "/post/v1";
 
     // 게시글 목록 보기
     @GetMapping("/show")
