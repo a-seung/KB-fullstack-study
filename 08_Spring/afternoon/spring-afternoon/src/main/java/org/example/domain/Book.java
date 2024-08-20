@@ -13,7 +13,7 @@ public class Book {
     private Long id;
     @Column(name = "title")
     private String title;
-    @Column(name = "title")
+    @Column(name = "author")
     private String author;
 
     public Book() {
