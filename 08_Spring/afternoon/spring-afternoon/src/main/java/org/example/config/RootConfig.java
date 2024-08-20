@@ -19,7 +19,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = "org.example") // 컴포넌트들을 어디서 찾을지 정해줌
-@MapperScan(basePackages = {"org.example.mapper"})
+@MapperScan(basePackages = {"org.example.mapper", "org.example.repository"})
 @PropertySource("classpath:application.properties")
 public class RootConfig {
 
