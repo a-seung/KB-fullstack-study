@@ -1,12 +1,16 @@
 package org.scoula.security.config;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.csrf.CsrfFilter;
@@ -15,7 +19,12 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 @Configuration
 @EnableWebSecurity
 @Log4j
+@MapperScan(basePackages = {"org.scoula.security.account.mapper"})
+@ComponentScan(basePackages = {"org.scoula.security"})
+@RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+
+    private final UserDetailsService userDetailsService;
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -32,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-//        http.addFilterBefore(encodingFilter(), CsrfFilter.class);
+        http.addFilterBefore(encodingFilter(), CsrfFilter.class);
 
         // 경로별 접근 권한 설정
         http.authorizeRequests()
@@ -55,18 +64,25 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth)
             throws Exception {
+        // in memory user 정보 삭제 → UserDetailsService와 같이 사용 불가
         log.info("configure .........................................");
-        auth.inMemoryAuthentication()
-                .withUser("admin")
-        //      .password("{noop}1234")
-                .password("$2a$10$AJ8AdEo3kGPO4ECVG7x/muiPA1IieV/oqUIdHos1vZKbmCnPZNFV6")
-                .roles("ADMIN","MEMBER"); // ROLE_ADMIN
-        auth.inMemoryAuthentication()
-                .withUser("member")
-        //      .password("{noop}1234")
-                .password("$2a$10$PEmjUs7DMYpYmaB/LZsFP.PpJ.6Aw4BrCvbPOO4rkWKEWqmtZia/y")
-                .roles("MEMBER"); // ROLE_MEMBER
+        auth
+                .userDetailsService(userDetailsService)
+                .passwordEncoder(passwordEncoder());
+
+
+//        auth.inMemoryAuthentication()
+//                .withUser("admin")
+//        //      .password("{noop}1234")
+//                .password("$2a$10$AJ8AdEo3kGPO4ECVG7x/muiPA1IieV/oqUIdHos1vZKbmCnPZNFV6")
+//                .roles("ADMIN","MEMBER"); // ROLE_ADMIN
+//        auth.inMemoryAuthentication()
+//                .withUser("member")
+//        //      .password("{noop}1234")
+//                .password("$2a$10$PEmjUs7DMYpYmaB/LZsFP.PpJ.6Aw4BrCvbPOO4rkWKEWqmtZia/y")
+//                .roles("MEMBER"); // ROLE_MEMBER
+//    }
+
+
     }
-
-
 }

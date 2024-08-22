@@ -1,4 +1,4 @@
-package org.scoula.security.domain;
+package org.scoula.security.account.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,5 +16,6 @@ public class MemberVO {
     private String email;
     private Date regDate;
     private Date updateDate;
+
     private List<AuthVO> authList; // 권한 목록, join 처리 필요
 }
