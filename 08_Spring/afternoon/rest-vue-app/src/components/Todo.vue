@@ -3,27 +3,16 @@
     <div class="todo-board">
       <h1>Todo</h1>
       <div class="add-todo">
-        <input
-          v-model="newTodo"
-          @keyup.enter="addTodo"
-          placeholder="새로운 할 일을 입력하세요"
-        />
+        <input v-model="newTodo" @keyup.enter="addTodo" placeholder="새로운 할 일을 입력하세요" />
         <button @click="addTodo" class="add-btn">추가</button>
       </div>
       <div v-if="error" class="error">{{ error }}</div>
       <div v-else>
         <ul class="todo-list" v-if="todos.length > 0">
-          <li
-            v-for="todo in todos"
-            :key="todo.id"
-            class="todo-item"
-            :class="{ completed: todo.done }"
-          >
+          <li v-for="todo in todos" :key="todo.id" class="todo-item" :class="{ completed: todo.done }">
             <div v-if="editingId === todo.id" class="edit-mode">
               <input v-model="editingText" @keyup.enter="updateTodo(todo.id)" />
-              <button @click="updateTodo(todo.id)" class="save-btn">
-                저장
-              </button>
+              <button @click="updateTodo(todo.id)" class="save-btn">저장</button>
               <button @click="cancelEdit" class="cancel-btn">취소</button>
             </div>
             <div v-else class="todo-content">
@@ -36,9 +25,7 @@
                   {{ todo.done ? '미완료' : '완료' }}
                 </button>
                 <button @click="startEdit(todo)" class="edit-btn">수정</button>
-                <button @click="deleteTodo(todo.id)" class="delete-btn">
-                  삭제
-                </button>
+                <button @click="deleteTodo(todo.id)" class="delete-btn">삭제</button>
               </div>
             </div>
           </li>
@@ -56,7 +43,7 @@ import axios from 'axios';
 const todos = ref([]);
 const loading = ref(false);
 const error = ref(null);
-const url = 'http://localhost:8080/todo';
+const url = 'http://localhost:8080/todo/jpa';
 
 const newTodo = ref('');
 const editingId = ref(null);
@@ -104,9 +91,7 @@ function cancelEdit() {
 
 async function updateTodo(id) {
   try {
-    const response = await axios.put(
-      `${url}/update/${id}/${editingText.value}`
-    );
+    const response = await axios.put(`${url}/update/${id}/${editingText.value}`);
     console.log('Todo 수정 :', response.data);
     cancelEdit();
     fetchTodos();

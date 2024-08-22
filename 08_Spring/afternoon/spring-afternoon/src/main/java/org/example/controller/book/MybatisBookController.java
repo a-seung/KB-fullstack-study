@@ -54,7 +54,6 @@ public class MybatisBookController {
         if (affectedRows == 0) return ResponseEntity.status(HttpStatus.NOT_FOUND).body("게시글 삭제 실패");
         return ResponseEntity.ok("게시글 삭제 성공");
 
-
     }
 
 }

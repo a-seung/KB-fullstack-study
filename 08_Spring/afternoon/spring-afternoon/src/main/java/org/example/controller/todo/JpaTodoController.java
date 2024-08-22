@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.domain.Todo;
 import org.example.repository.todo.jpa.JpaTodoRepository;
+import org.example.repository.todo.mybatis.TodoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,11 +17,13 @@ import java.util.List;
 @RequiredArgsConstructor
 @Transactional
 @CrossOrigin(origins = "*")
-@RequestMapping("/todo")
+@RequestMapping("/todo/jpa")
 public class JpaTodoController {
 
     private final JpaTodoRepository jpaTodoRepository;
+    private final TodoRepository todoRepository;
 
+    // 전체 todo 조회
     @GetMapping("")
     public ResponseEntity<List<Todo>> findAll() {
         List<Todo> todoList = jpaTodoRepository.findAll();
@@ -29,6 +32,7 @@ public class JpaTodoController {
         return ResponseEntity.ok(todoList);
     }
 
+    // 특정 todo 조회
     @GetMapping("/{id}")
     public ResponseEntity<Todo> findById(@PathVariable Long id) {
         Todo findTodo = jpaTodoRepository.findById(id);
@@ -39,30 +43,32 @@ public class JpaTodoController {
         return ResponseEntity.ok(findTodo);
     }
 
+    // todo 생성
     @PostMapping("/{todo}")
     public ResponseEntity<Todo> addTodo(@PathVariable("todo") String todo) {
-        log.info("==============> todo 추가 성공");
         Todo newTodo = new Todo(null, todo, false);
         Todo addedTodo = jpaTodoRepository.addTodo(newTodo);
-
-        if (addedTodo == null) return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-
-        return ResponseEntity.status(HttpStatus.CREATED).body(newTodo);
+        if (addedTodo == null) return ResponseEntity.notFound().build();
+        return ResponseEntity.ok(addedTodo);
     }
 
+    // todo 완료 토글
+    @PutMapping("/{id}")
 
-    // 완료설정
 
-    // 수정
+    // todo 수정
+//    @PutMapping("/update/{id}/{todo}")
+//
+//
 
-    // 삭제
+
     @DeleteMapping(value = "/{id}", produces = "text/plain;charset=UTF-8")
-    public ResponseEntity<Todo> deleteTodo(@PathVariable("id") Long id) {
-        Todo deleteTodo = jpaTodoRepository.findById(id);
-        if(deleteTodo == null) return ResponseEntity.notFound().build();
+    public ResponseEntity<String> deleteTodo(@PathVariable Long id) {
+        Todo findTodo = jpaTodoRepository.findById(id);
+        if (findTodo == null) return ResponseEntity.notFound().build();
 
-        jpaTodoRepository.delete(id);
-        return ResponseEntity.ok(deleteTodo);
+        jpaTodoRepository.deleteTodo(id);
+        log.info("==============> todo 삭제 성공");
+        return ResponseEntity.ok("삭제 성공");
     }
-
 }

@@ -7,12 +7,9 @@ import org.example.domain.BookMybatis;
 import java.util.List;
 
 @Mapper
-
 public interface BookMapper {
         public List<BookMybatis> findAll();
         public BookMybatis findById(@Param("id") Long id);
         public int save(BookMybatis newbook);
         public int delete(@Param("id") Long id);
-
-
 }

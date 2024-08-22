@@ -26,7 +26,7 @@ public class JpaTodoRepository {
 
     //특정 게시글 조회
     public Todo findById(@PathVariable("id") Long id) {
-           return em.find(Todo.class, id);
+        return em.find(Todo.class, id);
     }
 
     // Todo 추가 하기
@@ -36,14 +36,20 @@ public class JpaTodoRepository {
     }
 
     // 완료 변경하기
-
+    public Todo toggleDone(Long id) {
+        em.merge(id);
+        return em.find(Todo.class, id);
+    }
 
     // 수정하기
-
+    public Todo updateTodo(Todo newTodo) {
+        em.merge(newTodo);
+        return newTodo;
+    }
 
     // 삭제하기
-     void delete(Long id) {
+    public void deleteTodo(Long id) {
         Todo todo = em.find(Todo.class, id);
-        if(todo != null) em.remove(todo);
+        if (todo != null) em.remove(todo);
     }
 }

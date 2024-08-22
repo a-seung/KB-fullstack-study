@@ -9,9 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BookMybatis {
+public class TodoMybatis {
     private Long id;
-    private String title;
-    private String author;
-
+    private String todo;
+    private boolean done;
 }

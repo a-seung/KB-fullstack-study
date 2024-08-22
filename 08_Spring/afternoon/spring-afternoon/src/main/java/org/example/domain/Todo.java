@@ -20,5 +20,4 @@ public class Todo {
     private String todo;
     @Column(name = "done")
     private boolean done;
-
 }
