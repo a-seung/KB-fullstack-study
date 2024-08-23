@@ -19,9 +19,7 @@ import java.util.List;
 @CrossOrigin(origins = "*")
 @RequestMapping("/todo/jpa")
 public class JpaTodoController {
-
     private final JpaTodoRepository jpaTodoRepository;
-    private final TodoRepository todoRepository;
 
     // 전체 todo 조회
     @GetMapping("")
@@ -48,19 +46,30 @@ public class JpaTodoController {
     public ResponseEntity<Todo> addTodo(@PathVariable("todo") String todo) {
         Todo newTodo = new Todo(null, todo, false);
         Todo addedTodo = jpaTodoRepository.addTodo(newTodo);
-        if (addedTodo == null) return ResponseEntity.notFound().build();
+        if (addedTodo == null) return ResponseEntity.internalServerError().build();
+        log.info("==============> todo 생성 성공");
         return ResponseEntity.ok(addedTodo);
     }
 
     // todo 완료 토글
     @PutMapping("/{id}")
-
+    public ResponseEntity<Todo> toggleDone(@PathVariable Long id) {
+        Todo todoDone = jpaTodoRepository.findById(id);
+        if (todoDone == null) return ResponseEntity.notFound().build();
+        todoDone = jpaTodoRepository.toggleDone(id);
+        log.info("==============> todo 토글 변경 성공");
+        return ResponseEntity.ok(todoDone);
+    }
 
     // todo 수정
-//    @PutMapping("/update/{id}/{todo}")
-//
-//
-
+    @PutMapping("/update/{id}/{todo}")
+    public ResponseEntity<Todo> updateTodo(@PathVariable("id") Long id, @PathVariable("todo") String todo) {
+        Todo updatedTodo = jpaTodoRepository.findById(id);
+        if (updatedTodo == null) return ResponseEntity.notFound().build();
+        updatedTodo = jpaTodoRepository.updateTodo(id, todo);
+        log.info("==============> todo 수정 성공");
+        return ResponseEntity.ok(updatedTodo);
+    }
 
     @DeleteMapping(value = "/{id}", produces = "text/plain;charset=UTF-8")
     public ResponseEntity<String> deleteTodo(@PathVariable Long id) {

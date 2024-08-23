@@ -37,14 +37,21 @@ public class JpaTodoRepository {
 
     // 완료 변경하기
     public Todo toggleDone(Long id) {
-        em.merge(id);
-        return em.find(Todo.class, id);
+        Todo existingTodo = em.find(Todo.class, id);
+        if(existingTodo != null) {
+            existingTodo.setDone(!existingTodo.isDone());
+        }
+        return existingTodo;
     }
 
     // 수정하기
-    public Todo updateTodo(Todo newTodo) {
-        em.merge(newTodo);
-        return newTodo;
+    public Todo updateTodo(Long id, String newTodo) {
+        Todo existingTodo = em.find(Todo.class, id);
+        if(existingTodo != null) {
+            existingTodo.setTodo(newTodo);
+            em.merge(existingTodo);
+        }
+        return existingTodo;
     }
 
     // 삭제하기
