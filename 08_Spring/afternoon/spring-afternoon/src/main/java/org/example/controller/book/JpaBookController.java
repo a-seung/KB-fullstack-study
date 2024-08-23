@@ -2,7 +2,7 @@ package org.example.controller.book;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.domain.Book;
+import org.example.domain.book.Book;
 import org.example.repository.book.jpa.JpaBookRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

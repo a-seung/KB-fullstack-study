@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.domain.todo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

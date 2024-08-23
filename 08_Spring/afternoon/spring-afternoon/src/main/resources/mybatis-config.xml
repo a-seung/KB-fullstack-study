@@ -10,7 +10,7 @@
         <typeAlias alias="MemberDto" type="org.example.dto.member.MemberDto" />
         <typeAlias alias="PostDto" type="org.example.dto.post.PostDto" />
         <typeAlias alias="BoardDto" type="org.example.dto.board.BoardDto" />
-        <typeAlias alias="BookMybatis" type="org.example.domain.BookMybatis" />
-        <typeAlias alias="TodoMybatis" type="org.example.domain.TodoMybatis" />
+        <typeAlias alias="BookMybatis" type="org.example.domain.book.BookMybatis" />
+        <typeAlias alias="TodoMybatis" type="org.example.domain.todo.TodoMybatis" />
     </typeAliases>
 </configuration>

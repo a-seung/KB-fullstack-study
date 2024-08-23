@@ -2,7 +2,7 @@ package org.example.controller.book;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.domain.BookMybatis;
+import org.example.domain.book.BookMybatis;
 import org.example.repository.book.mybatis.BookRepository;
 
 import org.springframework.http.HttpStatus;

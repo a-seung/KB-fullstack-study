@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.domain.book;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class TodoMybatis {
+public class BookMybatis {
     private Long id;
-    private String todo;
-    private boolean done;
+    private String title;
+    private String author;
+
 }

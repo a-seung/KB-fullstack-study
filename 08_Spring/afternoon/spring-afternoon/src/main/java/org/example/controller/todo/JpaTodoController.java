@@ -2,10 +2,8 @@ package org.example.controller.todo;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.domain.Todo;
+import org.example.domain.todo.Todo;
 import org.example.repository.todo.jpa.JpaTodoRepository;
-import org.example.repository.todo.mybatis.TodoRepository;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

@@ -2,7 +2,7 @@ package org.example.controller.todo;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.example.domain.TodoMybatis;
+import org.example.domain.todo.TodoMybatis;
 import org.example.repository.todo.mybatis.TodoRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

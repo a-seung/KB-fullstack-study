@@ -1,9 +1,7 @@
 package org.example.repository.book.mybatis;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.example.domain.BookMybatis;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.example.domain.book.BookMybatis;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

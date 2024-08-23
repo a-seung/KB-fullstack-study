@@ -2,7 +2,7 @@ package org.example.repository.book.mybatis;
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.example.domain.BookMybatis;
+import org.example.domain.book.BookMybatis;
 
 import java.util.List;
 

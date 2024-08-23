@@ -2,7 +2,7 @@ package org.example.repository.todo.mybatis;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.ibatis.annotations.Param;
-import org.example.domain.TodoMybatis;
+import org.example.domain.todo.TodoMybatis;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
