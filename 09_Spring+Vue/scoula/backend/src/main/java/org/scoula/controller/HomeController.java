@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Slf4j //롬복에서 제공해주는 어노테이션, log라는 멤버 변수가 자동으로 생김
 public class HomeController {
 
-    @GetMapping("/")
-    public String home() {
-        log.info("================> HomeController /");
-        return "index"; // View의 이름 > 실제경로 : WEB-INF/views/index.jsp
-    }
+//    @GetMapping("/")
+//    public String home() {
+//        log.info("================> HomeController /");
+//        return "index"; // View의 이름 > 실제경로 : WEB-INF/views/index.jsp
+//    }
 }

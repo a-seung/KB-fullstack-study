@@ -12,7 +12,8 @@ import org.springframework.web.servlet.view.JstlView;
 @ComponentScan(basePackages = {
         "org.scoula.controller",
         "org.scoula.exception",
-        "org.scoula.board.controller"
+        "org.scoula.board.controller",
+        "org.scoula.member.controller",
 }) // Spring MVC용 컴포넌트 등록을 위한 스캔 패키지
 public class ServletConfig implements WebMvcConfigurer {
     // DispatcherServlet 을 설정하는 클래스
@@ -32,18 +33,6 @@ public class ServletConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/assets/**")
                 .addResourceLocations("/resources/assets/");
     }
-
-    // jsp view resolver 설정
-//    @Override
-//    public void configureViewResolvers(ViewResolverRegistry registry) {
-//        InternalResourceViewResolver bean = new InternalResourceViewResolver();
-//
-//        bean.setViewClass(JstlView.class);
-//        bean.setPrefix("/WEB-INF/views/");
-//        bean.setSuffix(".jsp");
-//
-//        registry.viewResolver(bean);
-//    }
 
     //Servlet 3.0 파일 업로드 사용시
     @Bean
