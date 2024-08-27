@@ -1,6 +1,7 @@
 package org.example.config;
 
 import org.example.security.UserConfig;
+import org.example.security.config.SecurityConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.context.WebApplicationContext;
@@ -15,7 +16,8 @@ import javax.servlet.ServletRegistration;
 
 
 @Configuration
-@Import(UserConfig.class)
+@Import(SecurityConfig.class)
+//@Import(UserConfig.class)
 public class WebConfig extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
