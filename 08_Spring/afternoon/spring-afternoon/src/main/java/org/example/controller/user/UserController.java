@@ -83,6 +83,7 @@ public class UserController {
         User newUser = new User();
         newUser.setUsername(username);
         newUser.setPassword(password);
+        newUser.setRoles("ROLE_MEMBER");
         userService.save(newUser);
 
         model.addAttribute("username", username);

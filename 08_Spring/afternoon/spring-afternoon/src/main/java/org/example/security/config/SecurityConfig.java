@@ -35,7 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/user/**").permitAll()
                 .antMatchers("/security/admin").access("hasRole('ROLE_ADMIN')")
                 .antMatchers("/security/**").permitAll()
-                .antMatchers("/**").access("hasRole('ROLE_MEMBER')");
+                .antMatchers("/kakao/**").permitAll() // 카카오로그인 페이지 모두 접근 가능
+                .antMatchers("/**").access("hasAnyRole('ROLE_MEMBER', 'ROLE_KAKAO')");
 
         http.formLogin()
                 .loginPage("/security/login")

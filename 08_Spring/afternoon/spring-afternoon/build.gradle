@@ -92,6 +92,9 @@ dependencies {
     implementation 'org.springframework.security:spring-security-crypto'
     implementation 'org.springframework.security:spring-security-core:5.8.0'
 
+    // json데이터를 받아오기 위한 그래들
+    // 카카오용 GSON
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 
 test {
