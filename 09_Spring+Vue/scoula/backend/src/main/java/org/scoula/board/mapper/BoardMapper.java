@@ -18,6 +18,7 @@ public interface BoardMapper {
 
     public int delete(Long no);
 
+
     public void createAttachment(BoardAttachmentVO attach);
 
     public List<BoardAttachmentVO> getAttachmentList(Long bno);
@@ -25,6 +26,5 @@ public interface BoardMapper {
     public BoardAttachmentVO getAttachment(Long no);
 
     public int deleteAttachment(Long no);
-
 
 }

@@ -20,15 +20,14 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class BoardServiceImpl implements BoardService {
-    final private BoardMapper mapper;
     private final static String BASE_DIR = "c:/upload/board";
+
+    private final BoardMapper mapper;
 
 
     @Override
     public List<BoardDTO> getList() {
-
         log.info("getList............");
-
         return mapper.getList().stream() // BoardVO의 스트림
                 .map(BoardDTO::of) // BoardDTO의 스트림
                 .toList(); // List<BoardDTO> 변환
@@ -42,6 +41,20 @@ public class BoardServiceImpl implements BoardService {
         log.info("================" + board);
         return Optional.ofNullable(board)
                 .orElseThrow(NoSuchElementException::new);
+    }
+
+    private void upload(Long bno, List<MultipartFile> files) {
+        for (MultipartFile part : files) {
+            if (part.isEmpty()) continue;
+            try {
+                String uploadPath = UploadFiles.upload(BASE_DIR, part);
+                BoardAttachmentVO attach = BoardAttachmentVO.of(part, bno, uploadPath);
+                mapper.createAttachment(attach);
+            } catch (IOException e) {
+                throw new RuntimeException(e); // @Transactional에서 감지, 자동 rollback
+                //log.error(e.getMessage());
+            }
+        }
     }
 
 
@@ -66,7 +79,15 @@ public class BoardServiceImpl implements BoardService {
     @Override
     public BoardDTO update(BoardDTO board) {
         log.info("update......" + board);
+        BoardVO boardVO = board.toVo();
+        log.info("update......" + boardVO);
+
         mapper.update(board.toVo());
+        List<MultipartFile> files = board.getFiles();
+        if(files != null && !files.isEmpty()) {
+            upload(board.getNo(), files);
+        }
+
         return get(board.getNo());
     }
 
@@ -77,19 +98,6 @@ public class BoardServiceImpl implements BoardService {
 
         mapper.delete(no);
         return board;
-    }
-
-    private void upload(Long bno, List<MultipartFile> files) {
-        for (MultipartFile part : files) {
-            if (part.isEmpty()) continue;
-            try {
-                String uploadPath = UploadFiles.upload(BASE_DIR, part);
-                BoardAttachmentVO attach = BoardAttachmentVO.of(part, bno, uploadPath);
-                mapper.createAttachment(attach);
-            } catch (IOException e) {
-                throw new RuntimeException(e); // @Transactional에서 감지, 자동 rollback
-            }
-        }
     }
 
     // 첨부파일 한 개 얻기

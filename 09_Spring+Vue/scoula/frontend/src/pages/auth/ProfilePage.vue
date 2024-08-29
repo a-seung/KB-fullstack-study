@@ -42,7 +42,7 @@ const onSubmit = async () => {
 
     <form @submit.prevent="onSubmit">
       <div class="mb-3 mt-3">
-        <img :src="avatarPath" class="avatar avatar-lg me-4" />
+        <img :src="avatarPath" class="avatar avatar-lg me-4" width="70px"/>
         {{ member.username }}
       </div>
 
