@@ -49,8 +49,8 @@ export default {
     formData.append('writer', article.writer);
     formData.append('content', article.content);
 
+    // 첨부파일이 있는 경우
     if (article.files) {
-      // 첨부파일이 있는 경우
       for (let i = 0; i < article.files.length; i++) {
         formData.append('files', article.files[i]);
       }

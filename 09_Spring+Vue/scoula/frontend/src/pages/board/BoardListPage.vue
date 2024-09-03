@@ -44,6 +44,8 @@ load();
             </router-link>
           </td>
           <td>{{ article.writer }}</td>
+          
+          <!-- moment라이브러리 사용 -->
           <td>{{ moment(article.regDate).format('YYYY-MM-DD') }}</td>
         </tr>
       </tbody>

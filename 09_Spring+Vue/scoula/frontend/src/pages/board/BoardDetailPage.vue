@@ -58,7 +58,7 @@ load();
   <div class="text -end">
     <div v-for="file in article.attaches" :key="file.no" class="attach">
         <span @click="download(file.no)">
-        <i class="fa -solid fa -paperclip"></i>
+        <i class="fa-solid fa-paperclip"></i>
         {{ file.filename }}
       </span>
     </div>
